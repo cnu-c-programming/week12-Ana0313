@@ -26,7 +26,7 @@ void config_parser(Config* config_ptr){
             }else if(strcmp(key,"SectionName")==0){
                 strcpy(config_ptr->SectionName,value);
             }else if(strcmp(key,"Address")==0){
-                sscanf(value,"%llu",&config_ptr->Address);
+                sscanf(value,"%llx",&config_ptr->Address);
             }
         }
     }
